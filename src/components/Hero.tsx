@@ -1,7 +1,11 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="pb-12 pt-20">
-      <h1 className="text-3xl font-bold leading-tight sm:text-4xl">Syed Amir Ali</h1>
+      <div className="flex flex-col-reverse items-center gap-8 sm:flex-row sm:items-start sm:justify-between">
+        <div className="text-center sm:text-left">
+          <h1 className="text-3xl font-bold leading-tight sm:text-4xl">Syed Amir Ali</h1>
       <p className="mt-2 text-lg font-medium text-accent">
         Product Development Engineer @ HBL
       </p>
@@ -13,7 +17,7 @@ export default function Hero() {
       </p>
 
       {/* Social Links */}
-      <div className="mt-6 flex flex-wrap gap-4">
+      <div className="mt-6 flex flex-wrap justify-center gap-4 sm:justify-start">
         <SocialLink href="mailto:syedamirali14@gmail.com" label="Email">
           <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
         </SocialLink>
@@ -39,6 +43,16 @@ export default function Hero() {
         </svg>
         Download Resume
       </a>
+        </div>
+        <Image
+          src="/AmirDP.jpeg"
+          alt="Syed Amir Ali"
+          width={180}
+          height={180}
+          className="rounded-full border-4 border-accent/30 shadow-lg"
+          priority
+        />
+      </div>
     </section>
   );
 }
