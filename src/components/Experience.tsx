@@ -25,7 +25,7 @@ const experiences = [
   },
   {
     date: "2022 — 2022",
-    title: "Lead Mobile Apps",
+    title: "Software Engineer",
     company: "Codevative",
     type: "Hybrid",
     description:
@@ -42,7 +42,7 @@ const experiences = [
   {
     date: "2018 — 2019",
     title: "Frontend Developer",
-    company: "Dany Technologies",
+    company: "TechChef",
     type: "Full Time",
     description:
       "Built websites with React JS and WordPress. ERP consulting for multiple clients across sales, POS, inventory, and HR modules.",
